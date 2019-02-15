@@ -1,4 +1,4 @@
-function [h1,h2,R,A1,A2,Ap1,q1,q2,q3,q4,R1,R2,R12,R3,R4,R34,Tf]=RHX_Parameters(x,T1,r1,r2,S,k2,N,L,H,e1,e2,g,v)
+function [h1,h2,R,A1,A2,Ap2,q1,q2,q3,q4,R1,R2,R12,R3,R4,R34,Tf]=RHX_Parameters(x,T1,r1,r2,S,k2,N,L,H,e1,e2,g,v)
 
 % T1: molten-salt temperature.
 % T2: tube inner-wall temperature.
@@ -123,11 +123,11 @@ A1=2*pi*r1*L*N; % A1: internal surface of heat exchanger tubes.
 
 A2=2*pi*r2*L*N; % A2: external surface of heat exchanger tubes.
 
-% Surface area of radiation absorber plates (one assembly consists 25 tubes and two absorber plates):
+% Surface area of radiatant heat absorber plates (one assembly consists 25 tubes and two absorber plates):
 
 Ap1=H*L*8; % Ap1: total surface area of tube-side absorber plates (8 plates).
 
-a=100; % a: number of fins on one side of absorber plate.
+a=100; % a: number of fins on the finned side of the absorber.
 
 b=0.012; % b: fin height (m).
 
