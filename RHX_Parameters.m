@@ -123,15 +123,15 @@ A1=2*pi*r1*L*N; % A1: internal surface of heat exchanger tubes.
 
 A2=2*pi*r2*L*N; % A2: external surface of heat exchanger tubes.
 
-% Surface area of radiatant heat absorber plates (one assembly consists 25 tubes and two absorber plates):
+% Surface area of triangular radiatant heat absorber plates (one assembly consists 25 tubes and two absorber plates):
 
 Ap1=H*L*8; % Ap1: total surface area of tube-side absorber plates (8 plates).
 
 a=100; % a: number of fins on the finned side of the absorber.
 
-b=0.012; % b: fin height (m).
+b=0.0216; % b: fin height (m).
 
-Ap2=(H*L+2*a*b*H)*8; % Ap2: total surface area of air-side absorber plates (8 plates).
+Ap2=2*a*b*H*8; % Ap2: total surface area of air-side absorber plates (8 plates).
 
 
 % 7. Radiation resistances
